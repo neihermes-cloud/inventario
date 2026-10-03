@@ -1,0 +1,15 @@
+# Configuração local de conexão
+.env
+.env.*
+!.env.example
+
+# Dependências e arquivos de desenvolvimento
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Arquivos de estoque e resultados locais
+Planilhas/
+outputs/
+work/

@@ -1,0 +1,4 @@
+export interface Source {id:string;name:string;hash:string;bytes:Uint8Array;sheet:string;sheetPath:string;headerRow:number;lastColumn:number;rows:number}
+export interface Item {id:string;sourceId:string;row:number;productCode:string;barcode:string;description:string;unit:string;reference:number|string;issue:string;candidateCodes?:string;sourceFile?:string;sourceRow?:number}
+export interface CountEvent {id:string;itemId:string;actor:string;quantity:number;note:string;createdAt:string;parentId:string|null;synced:boolean}
+export interface LocalInventory {id:string;name:string;createdAt:string;mode:'solo'|'team';items:Item[];sources:Source[];events:CountEvent[];approvals:Record<string,string>;remoteId?:string;companyId?:string;ownerId?:string;closed?:boolean;importComplete?:boolean;lastSequence?:number}

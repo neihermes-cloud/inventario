@@ -18,7 +18,7 @@ O banco compartilhado usa as tabelas com prefixo `inventory_app_`, RLS e funçõ
 - Exportação parcial ou final preservando o pacote original e acrescentando quantidade, diferença, situação, responsável, data/hora e observação.
 - Cópia JSON das contagens para recuperação manual.
 
-Arquivos `.xls` antigos devem ser convertidos para `.xlsx` ou usados por meio do cadastro consolidado já preparado em `outputs/`. Câmera de código de barras, distribuição por setor e hospedagem pública são etapas seguintes do piloto.
+Arquivos `.xls` antigos devem ser convertidos para `.xlsx` ou usados por meio do cadastro consolidado já preparado em `outputs/`. A leitura por câmera funciona quando o navegador oferece `BarcodeDetector` e permite câmera; a busca manual permanece disponível. Distribuição por setor e hospedagem pública ficam para a próxima etapa. O GitHub Pages não está disponível enquanto este repositório permanecer privado no plano atual.
 
 ## Verificação
 

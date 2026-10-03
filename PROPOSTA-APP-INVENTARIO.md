@@ -110,7 +110,7 @@ O plano gratuito do banco não cobre automaticamente a hospedagem da interface o
 
 1. **Concluído:** importação rastreável, tela de um produto por vez, busca, salvar e avançar, retomada, zero/pendente, trabalho individual e equipe.
 2. **Concluído:** uso sem internet, sincronização manual, prevenção de duplicidade, revisão de conflitos, histórico, aprovação e exportação parcial/final preservada.
-3. **Próximo piloto:** câmera para etiquetas, distribuição por setor, revisão dos 225 vínculos ambíguos, fotos de ocorrências e validação com contas reais de contador e gestor.
+3. **Próximo piloto:** distribuição por setor, revisão dos 225 vínculos ambíguos, fotos de ocorrências e validação com contas reais de contador e gestor. A leitura por câmera já está disponível como recurso opcional, com busca manual como fallback.
 
 ## Critérios para validar o piloto
 

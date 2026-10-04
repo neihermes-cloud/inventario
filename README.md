@@ -4,7 +4,7 @@ PWA mobile-first para importar os arquivos `.xlsx` de estoque, contar produtos n
 
 ## Acesso ao aplicativo
 
-Endereço previsto de publicação: https://neihermes-cloud.github.io/inventario/. A primeira publicação depende de concluir a verificação de identidade do GitHub, mudar o repositório para público e habilitar Pages com GitHub Actions.
+Aplicativo publicado: https://neihermes-cloud.github.io/inventario/. Em 04/10/2026, a verificação de identidade foi concluída, o repositório foi alterado para público e Pages foi habilitado com GitHub Actions. A primeira publicação foi concluída e conferida no navegador.
 
 Abra o endereço no navegador do celular ou computador. A opção **Entrar** usa a conta do sistema Mercado e as permissões da empresa. A contagem local também pode ser preparada sem login. Para trabalhar em equipe, entre na conta e sincronize os envios; os arquivos Excel originais ficam no aparelho que fez a importação.
 

@@ -1,0 +1,42 @@
+name: Publicar aplicativo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+        env:
+          VITE_BASE_PATH: /inventario/
+          # Configuração pública do cliente; o acesso aos dados exige login e RLS.
+          VITE_SUPABASE_URL: https://oiusrshkrbgkxmbmtvgm.supabase.co
+          VITE_SUPABASE_PUBLISHABLE_KEY: sb_publishable_6rwkXo-VCVD5wQtxpQO3MA_K8KTtgG5
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
